@@ -33,6 +33,7 @@ label input[type="checkbox"] {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  margin-right: 2px;
 }
 
 label input[type="checkbox"]:checked~.check {
@@ -85,22 +86,33 @@ label input[type="checkbox"]:checked~.check:before {
   color: #222;
 }
 
-.text .on{
+.text.on{
   opacity: 0;
   transform: translateY(20px);
   -webkit-transform: translateY(20px);
   -moz-transform: translateY(20px);
   -ms-transform: translateY(20px);
   -o-transform: translateY(20px);
+
 }
 
 label input[type="checkbox"]:checked ~ .text.on{
+  opacity: 1;
+  color: #fff;
   transform: translateY(0);
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
   -ms-transform: translateY(0);
   -o-transform: translateY(0);
-  opacity: 1;
+}
+
+label input[type="checkbox"]:checked ~ .text.off{
+  opacity: 0;
   color: #fff;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
 }
 
